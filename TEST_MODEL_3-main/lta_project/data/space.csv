@@ -1,0 +1,68 @@
+﻿IFC_Entity,IFC_Subtype,Property,Value,Type of Elements,Unit,Input Limitation,Examples
+IfcSpace,AREA_CONNECTIVITY,ACN_ConnectivityType,Corridor,-,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_ActivityGeneratingUseType,None,-,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_IsPavingSpecified,FALSE,-,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_PavingSpecification,N.A.,-,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_IsOpen24HoursToPublic,TRUE,-,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_OpenTime,00:00:00,-,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_CloseTime,00:00:00,-,-,-,-
+IfcSpace,AREA_GFA,AGF_DevelopmentUse,Residential (Non-Landed),,-,-,-
+IfcSpace,AREA_GFA,AGF_DetailedUse,Residential Units,,-,-,-
+IfcSpace,AREA_GFA,AGF_Name,Private Enclosed Space,,-,-,-
+IfcSpace,AREA_GFA,AGF_UnitNumber,03-333,,-,-,-
+IfcSpace,AREA_GFA,AGF_BonusGFAType,Balcony Incentive Scheme,,-,-,-
+IfcSpace,AREA_GFA,AGF_Note,Residential Living,,-,-,-
+IfcSpace,AREA_GFA,AGF_UseQuantum,Predominant,,-,-,-
+IfcSpace,AREA_GFA,AGF_FacilityType,Condominium,,-,-,-
+IfcSpace,AREA_GFA,AGF_DevelopmentUse,Residential (Non-Landed),,-,-,-
+IfcSpace,AREA_GFA,AGF_DetailedUse,Balcony,,-,-,-
+IfcSpace,AREA_GFA,AGF_Name,Private Enclosed Space,,-,-,-
+IfcSpace,AREA_GFA,AGF_UnitNumber,03-333,,-,-,-
+IfcSpace,AREA_GFA,AGF_BonusGFAType,Balcony Incentive Scheme,,-,-,-
+IfcSpace,AREA_GFA,AGF_Note,Private Residential Living,,-,-,-
+IfcSpace,AREA_GFA,AGF_UseQuantum,Predominant,,-,-,-
+IfcSpace,AREA_GFA,AGF_FacilityType,Condominium,,-,-,-
+IfcSpace,AREA_GFA,AGF_DevelopmentUse,Residential (Non-Landed),,-,-,-
+IfcSpace,AREA_GFA,AGF_DetailedUse,Residential Units,,-,-,-
+IfcSpace,AREA_GFA,AGF_Name,Private Enclosed Space,,-,-,-
+IfcSpace,AREA_GFA,AGF_UnitNumber,03-333,,-,-,-
+IfcSpace,AREA_GFA,AGF_BonusGFAType,Balcony Incentive Scheme,,-,-,-
+IfcSpace,AREA_GFA,AGF_Note,Residential Living,,-,-,-
+IfcSpace,AREA_GFA,AGF_UseQuantum,Predominant,,-,-,-
+IfcSpace,AREA_GFA,AGF_FacilityType,Condominium,,-,-,-
+IfcSpace,AREA_GFA,AGF_DevelopmentUse,Residential (Non-Landed),,-,-,-
+IfcSpace,AREA_GFA,AGF_DetailedUse,Balcony,,-,-,-
+IfcSpace,AREA_GFA,AGF_Name,Private Enclosed Space,,-,-,-
+IfcSpace,AREA_GFA,AGF_UnitNumber,03-333,,-,-,-
+IfcSpace,AREA_GFA,AGF_BonusGFAType,Balcony Incentive Scheme,,,-,-
+IfcSpace,AREA_GFA,AGF_Note,Private Residential Living,,,-,-
+IfcSpace,AREA_GFA,AGF_UseQuantum,Predominant,,,-,-
+IfcSpace,AREA_GFA,AGF_FacilityType,Condominium,,,-,-
+IfcSpace,N.A.,SpaceName,Staircase,,-,-,-
+IfcSpace,N.A.,OccupancyType,Multi-Unit Residential,,-,-,-
+IfcSpace,N.A.,SpaceName,Corridor,,-,-,-
+IfcSpace,N.A.,OccupancyType,Multi-Unit Residential,,-,-,-
+IfcSpace,N.A.,SpaceName,Living Room,,-,-,-
+IfcSpace,N.A.,OccupancyType,Multi-Unit Residential,,-,-,-
+IfcSpace,N.A.,SpaceName,Kitchen,,-,-,-
+IfcSpace,N.A.,OccupancyType,Multi-Unit Residential,,-,-,-
+IfcSpace,N.A.,SpaceName,Toilet,,-,-,-
+IfcSpace,N.A.,OccupancyType,Multi-Unit Residential,,-,-,-
+IfcSpace,N.A.,SpaceName,Bedroom,,-,-,-
+IfcSpace,N.A.,OccupancyType,Multi-Unit Residential,,-,-,-
+IfcSpace,N.A.,SpaceName,Balcony,,-,-,-
+IfcSpace,N.A.,OccupancyType,Multi-Unit Residential,,-,-,-
+IfcSpace,ACCESSIBLEROUTE,BarrierFreeAccessibility,Boolean,-,-,-,Yes
+IfcSpace,ACCESSIBLEROUTE,Width,Length,-,-,mm,No
+IfcSpace,N.A.,VentilationMode,Text,-,-,-,Yes
+IfcSpace,N.A.,Area,Length,-,-,m²,No
+IfcSpace,REFUSECHUTE,SpaceName,Text,-,-,-,Yes
+IfcSpace,"ACCESSWAY, FIREENGINEARCESSROAD, FIREENGINEARCESSWAY, VEHICULARSERVICEROAD",LoadingCapacity,Real,-,-,tonnes,No
+IfcSpace,"ACCESSWAY, FIREENGINEARCESSROAD, FIREENGINEARCESSWAY, VEHICULARSERVICEROAD",Material,Text,-,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_ConnectivityType,,,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_ActivityGeneratingUseType,,,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_IsPavingSpecified,,,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_PavingSpecification,,,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_IsOpen24HoursToPublic,,,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_OpenTime,,,-,-,-
+IfcSpace,AREA_CONNECTIVITY,ACN_CloseTime,,,-,-,-

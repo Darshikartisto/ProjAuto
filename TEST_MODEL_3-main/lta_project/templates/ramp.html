@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramp Data - Land Transport Authority (LTA)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Land Transport Authority (LTA)</h1>
+    </header>
+    <nav>
+        <a href="data/cleaned_ifc_data.csv">LTA Requirements</a>
+        <a href="lta_project/data/ramp.csv">Space Data</a>
+        <a href="lta_project/data/space.csv">Ramp Data</a>
+    </nav>
+    <main>
+        <h2>Ramp Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>IFC SubType</th>
+                    <th>IFC-SG Property</th>
+                    <th>Property Type</th>
+                    <th>Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in ramp_data %}
+                <tr>
+                    <td>{{ row['S/N'] }}</td>
+                    <td>{{ row['IFC SubType'] }}</td>
+                    <td>{{ row['IFC-SG Property'] }}</td>
+                    <td>{{ row['Property Type'] }}</td>
+                    <td>{{ row['Unit'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

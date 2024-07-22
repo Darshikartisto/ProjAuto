@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.legend-container {
+    padding: 1em;
+    text-align: center;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.architecture-color {
+    background-color: orange;
+}
+
+.cs-color {
+    background-color: green;
+}
+
+.me-color {
+    background-color: yellow;
+}
+
+.ifc-color {
+    background-color: gray;
+}
+
+main {
+    padding: 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th.requirement-heading {
+    background-color: #4CAF50; /* Background color for Requirement heading */
+    color: black; /* Text color for Requirement heading */
+}
+
+td.keyword {
+    color: black; /* Text color for Keyword column */
+}
+
+td[data-content="architecture"] {
+    background-color: orange;
+}
+

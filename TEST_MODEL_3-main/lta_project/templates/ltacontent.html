@@ -1,0 +1,59 @@
+<!-- templates/nea_content.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEA Content</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>National Environment Agency (NEA)</h1>
+            <nav>
+                <ul>
+                    <li>Legend</li>
+                    <li>Authorities</li>
+                    <li>C&S</li>
+                    <li>HSE</li>
+                    <li>CCMD</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="pre-submission">
+                <h2>Pre-Submission, Planning and Other Consultations</h2>
+                <div class="content">
+                    <h3>Pollution Control (COPPC)</h3>
+                    <ul>
+                        <li>Confirm the proposed development is aligned with the prevailing URA MP land use zoning.</li>
+                        <li>Building works including installation of pollution control facilities, chemical storage facilities.</li>
+                        <!-- Add other list items as needed -->
+                    </ul>
+                    <div class="table-section">
+                        <table>
+                            <tr>
+                                <th>Front setback</th>
+                                <td>15m</td>
+                            </tr>
+                            <tr>
+                                <th>End setback</th>
+                                <td>30m</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Who to apply: Applicants are required to submit the above information by Design Gateway (G1).</p>
+                    <p>Who to submit: NEA</p>
+                </div>
+            </section>
+            <section class="design-gateway">
+                <h2>Design Gateway</h2>
+                <h3>Environmental Impact Study (EIS-Pro)</h3>
+                <p>IES-Pro project will not be required for proposed infrastructure that would have environmental impact (air, noise, water).</p>
+                <!-- Add other content as needed -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Data - Land Transport Authority (LTA)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Land Transport Authority (LTA)</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('index') }}">LTA Requirements</a>
+        <a href="{{ url_for('space') }}">Space Data</a>
+        <a href="{{ url_for('ramp') }}">Ramp Data</a>
+    </nav>
+    <main>
+        <h2>Space Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>IFC Entity</th>
+                    <th>IFC Subtype</th>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in space_data %}
+                <tr>
+                    <td>{{ row.IFC_Entity }}</td>
+                    <td>{{ row.IFC_Subtype }}</td>
+                    <td>{{ row.Property }}</td>
+                    <td>{{ row.Value }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

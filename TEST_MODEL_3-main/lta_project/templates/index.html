@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Transport Authority (LTA)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Land Transport Authority (LTA)</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('index') }}">LTA Requirements</a>
+        <a href="{{ url_for('space') }}">Space Data</a>
+        <a href="{{ url_for('ramp') }}">Ramp Data</a>
+    </nav>
+    <div class="legend-container">
+        <h2>Legend</h2>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color architecture-color"></div>
+                <span>Architecture</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color cs-color"></div>
+                <span>C&S</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color me-color"></div>
+                <span>M&E</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color ifc-color"></div>
+                <span>IFC Component</span>
+            </div>
+        </div>
+    </div>
+    <main>
+        <h2>LTA Requirements</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th data-content="Gate">Gateway</th>
+                    <th data-content="architecture">Architecture</th>
+                    <th data-content="C&S">C&S</th>
+                    <th data-content="M&E">M&E</th>
+                    <th data-content="Ifc">IFC Component</th>
+                    <th>Keyword</th>
+                    <th>Requirement</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in lta_data %}
+                <tr>
+                    <td>{{ row['Gateway '] }}</td>
+                    <td>{{ row['architecture'] }}</td>
+                    <td>{{ row['C &s'] }}</td>
+                    <td>{{ row['M&e'] }}</td>
+                   
+                        <td>
+                            {% if row['IFC COMPONENT'] == 'space' %}
+                                <a href="{{ url_for('space') }}"> Space </a>
+                            {% elif row['IFC COMPONENT'] == 'ramp' %}
+                                <a href="{{ url_for('ramp') }}">Ramp</a>
+                            {% else %}
+                                
+                            {% endif %}
+                        </td>
+                    </td>
+                    <td>{{ row['keywords'] }}</td>
+                    <td>{{ row[' Requirement '] }}</td>
+                    <td>{{ row['DESCRIPTION'] }}</td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
